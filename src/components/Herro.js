@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
-import BgImg from '../assets/bg-image.png'
+import BgImg from '../assets/bg-image.png';
+import {BiDownArrowAlt} from 'react-icons/bi';
 
 
 
@@ -72,6 +73,7 @@ const Herro = () => {
                     <span>
                         trykk her
                     </span>
+                    <BiDownArrowAlt/>
 
             </Button>
 

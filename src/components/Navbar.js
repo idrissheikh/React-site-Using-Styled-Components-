@@ -2,13 +2,16 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import Img from '../assets/logo.svg';
 import {Link} from 'react-router-dom';
+import{VscTerminalLinux} from 'react-icons/vsc';
 
 
 const NavbarContainer =styled.div`
+padding-top:10px;
 width:100%;
-height:85px;
+height:75px;
 background:#fff;
 z-index:20;
+position:fixed;
 `
 const NavbarWrap =styled.div`
 width:100%;
@@ -32,6 +35,7 @@ const Nav =styled.div`
 flex:1;
 position: relative;
 padding-left:50px;
+
 `
 
 const NavLink =styled(Link)`
@@ -44,7 +48,7 @@ text-decoration:none;
 
 `
 const Search=styled.div`
-padding-top:11px;
+padding-top:15px;
 position :relative;
 `
 const SearchWrap =styled.div`
@@ -72,6 +76,7 @@ outline:none;
 }
 
 `
+
 const ButtonContainer =styled.div`
 display:flex;
 align-items:center;
@@ -97,6 +102,8 @@ const Navbar = () => {
   return (
     <NavbarContainer>
         <NavbarWrap>
+        <VscTerminalLinux/>
+
             <Logo/>
             <Nav>
                 <NavLink to='/'>Home</NavLink>
